@@ -25,3 +25,6 @@ Launch: https://mkrabset.github.io/krabzcam/index.html
 * Show/hide overlayed keystroke hints
 
 
+[4 min demo](https://flic.kr/p/2kceNgL)
+
+
