@@ -19,7 +19,7 @@ Launch: https://mkrabset.github.io/krabzcam/index.html
 * Level-first or depth-first
 * Metric / imperial units
 * Optimize-function to reduce operation time (genetic TSP algorithm)
-* Move, scale, rotate 3d objects before toolpath generation. Lock to axis.
+* Move, scale, rotate 2d objects before toolpath generation. Lock to axis.
 * Zoom-able/pan-able 2d view (mouse wheel for zoom, left-click/drag for pan)
 * Box-select to pick graphics elements for operation
 * Show/hide overlayed keystroke hints
