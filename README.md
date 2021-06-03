@@ -14,6 +14,7 @@ Launch: https://mkrabset.github.io/krabzcam/index.html
 * Engraving operations (follow path)
 * Laser/plotter operation (m3/m5 for on/off)
 * Relief operations (roughing and follow height)
+* V-bit operations (pocket and inlay)
 * Import/Export user settings to file
 * Plunge / ramp attack methods
 * Level-first or depth-first
