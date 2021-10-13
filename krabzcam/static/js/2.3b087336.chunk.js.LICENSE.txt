@@ -126,34 +126,3 @@ object-assign
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-/**
- * @license
- * Flo-mat  <https://www.npmjs.com/package/flo-mat>
- * Released under MIT license <https://www.npmjs.com/package/flo-mat#license>
- */
-
-/**
- * @license
- * Get-pixels <https://www.npmjs.com/package/get-pixels/>
- * Released under MIT license  <https://github.com/scijs/get-pixels/blob/master/LICENSE/>
- */
-
-/**
- * @license
- * Path-that-svg <https://www.npmjs.com/package/path-that-svg/>
- * Released under MIT license
- */
-
-/**
- * @license
- * Svg-path-parser <https://www.npmjs.com/package/svg-path-parser/>
- * Released under MIT license <https://github.com/hughsk/svg-path-parser/blob/master/LICENSE/>
- */
-
-/**
- * @license
- * FFlate <https://www.npmjs.com/package/fflate/>
- * Released under MIT license <https://github.com/101arrowz/fflate/blob/HEAD/LICENSE/>
- */
-
