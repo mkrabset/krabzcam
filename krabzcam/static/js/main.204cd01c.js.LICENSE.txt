@@ -35,8 +35,6 @@
 
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
-/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
 /**
  * @license React
  * react-dom.production.min.js
@@ -81,12 +79,6 @@
  * @license
  * Flo-mat  <https://www.npmjs.com/package/flo-mat>
  * Released under MIT license <https://www.npmjs.com/package/flo-mat#license>
- */
-
-/**
- * @license
- * Get-pixels <https://www.npmjs.com/package/get-pixels/>
- * Released under MIT license  <https://github.com/scijs/get-pixels/blob/master/LICENSE/>
  */
 
 /**
