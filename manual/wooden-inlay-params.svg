@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="289.23776mm"
+   height="294.16119mm"
+   viewBox="0 0 289.23776 294.16119"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="wooden-inlay-params.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.4204826"
+     inkscape:cx="524.39744"
+     inkscape:cy="361.48939"
+     inkscape:window-width="1920"
+     inkscape:window-height="979"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="-160.96404"
+       y="396.91412"
+       width="1197.1279"
+       height="447.56906"
+       id="rect1074" />
+  </defs>
+  <g
+     inkscape:label="Lag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(34.419348,-7.9192317)">
+    <path
+       id="rect2229"
+       style="opacity:1;fill:#ffd5d5;stroke-width:1.5;stroke-dasharray:3, 1.5;stop-color:#000000;stop-opacity:1"
+       d="M 52.162367,37.620632 H 67.85364 l 15.691273,38.629167 h 15.691273 15.691274 15.69127 16.74961 l 16.22044,-38.629167 h 14.10377 c 0.0238,0 0.0469,0.0024 0.0693,0.0069 0.0224,0.0046 0.0439,0.01127 0.0645,0.01993 0.0205,0.0087 0.04,0.01925 0.0583,0.03156 0.0182,0.01231 0.0352,0.02632 0.0507,0.04183 0.0155,0.0155 0.0295,0.03249 0.0418,0.05073 0.0123,0.01825 0.0229,0.03775 0.0316,0.05829 0.009,0.02054 0.0154,0.0421 0.0199,0.06448 0.005,0.02237 0.007,0.04555 0.007,0.06931 v 42.424805 c 0,0.19006 -0.153,0.343069 -0.34306,0.343069 H 52.162367 c -0.190061,0 -0.343069,-0.153009 -0.343069,-0.343069 V 37.963701 c 0,-0.02376 0.0024,-0.04694 0.0069,-0.06931 0.0046,-0.02237 0.01127,-0.04394 0.01993,-0.06448 0.0087,-0.02054 0.01925,-0.04004 0.03156,-0.05829 0.01231,-0.01825 0.02632,-0.03523 0.04183,-0.05073 0.0155,-0.0155 0.03249,-0.02952 0.05074,-0.04183 0.01825,-0.01231 0.03775,-0.0229 0.05828,-0.03156 0.02054,-0.0087 0.0421,-0.01538 0.06448,-0.01993 0.02237,-0.0046 0.04555,-0.0069 0.06931,-0.0069 z"
+       sodipodi:nodetypes="scccccccssssssssssssssssssssss" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 51.817525,38.1057 h 15.905931 l 15.90593,38.62917 h 15.905931 15.905933 15.90593 15.90593 L 163.15904,38.1057 h 15.90593"
+       id="path245"
+       sodipodi:nodetypes="ccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.1764px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+       x="-14.006294"
+       y="60.039238"
+       id="text956"><tspan
+         sodipodi:role="line"
+         id="tspan954"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+         x="-14.006294"
+         y="60.039238">flatDepth</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+         x="-14.006294"
+         y="72.759735"
+         id="tspan958" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:45.9232px;line-height:1.25;font-family:Symbola;-inkscape-font-specification:Symbola;stroke-width:1.72212"
+       x="29.399364"
+       y="70.531303"
+       id="text962"><tspan
+         sodipodi:role="line"
+         id="tspan960"
+         style="stroke-width:1.72212"
+         x="29.399364"
+         y="70.531303">{</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.8595px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.519732"
+       x="89.059586"
+       y="32.48344"
+       id="text1070"><tspan
+         sodipodi:role="line"
+         id="tspan1068"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.519732"
+         x="89.059586"
+         y="32.48344">Pocket</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1072"
+       style="font-size:26.6667px;line-height:1.25;font-family:Symbola;-inkscape-font-specification:Symbola;white-space:pre;shape-inside:url(#rect1074);display:inline" />
+    <path
+       style="fill:#008000;stroke:#008000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3, 1.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 51.149111,38.372176 136.502029,0"
+       id="path1235"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.5441px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#008000;stroke-width:0.320403"
+       x="189.32985"
+       y="40.794487"
+       id="text1288"><tspan
+         sodipodi:role="line"
+         id="tspan1286"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#008000;stroke-width:0.320403"
+         x="189.32985"
+         y="40.794487">Artwork level</tspan></text>
+    <g
+       id="g3506">
+      <g
+         id="g2687"
+         transform="translate(0,1.5875)">
+        <path
+           id="rect2229-8"
+           style="fill:#ffd5d5;stroke-width:1.5;stroke-dasharray:3, 1.5;stop-color:#000000"
+           d="m 52.162367,166.11558 h 12.301187 l 16.435526,-38.6616 h 18.337106 15.691274 15.69127 19.39544 l 16.61401,38.6616 h 12.1227 c 0.0238,0 0.0469,0.002 0.0693,0.007 0.0224,0.005 0.0439,0.0113 0.0645,0.0199 0.0205,0.009 0.04,0.0192 0.0583,0.0316 0.0182,0.0123 0.0352,0.0263 0.0507,0.0418 0.0155,0.0155 0.0295,0.0325 0.0418,0.0507 0.0123,0.0182 0.0229,0.0378 0.0316,0.0583 0.009,0.0205 0.0154,0.0421 0.0199,0.0645 0.005,0.0224 0.007,0.0455 0.007,0.0693 v 3.93653 c 0,0.19006 -0.153,0.34307 -0.34306,0.34307 H 52.162367 c -0.190061,0 -0.343069,-0.15301 -0.343069,-0.34307 v -3.93649 c 0,-0.0238 0.0024,-0.0469 0.0069,-0.0693 0.0046,-0.0224 0.01127,-0.0439 0.01993,-0.0645 0.0087,-0.0205 0.01925,-0.04 0.03156,-0.0583 0.01231,-0.0182 0.02632,-0.0352 0.04183,-0.0507 0.0155,-0.0155 0.03249,-0.0295 0.05074,-0.0418 0.01825,-0.0123 0.03775,-0.0229 0.05828,-0.0316 0.02054,-0.009 0.0421,-0.0154 0.06448,-0.0199 0.02237,-0.005 0.05273,0.01 0.06931,-0.007 z"
+           sodipodi:nodetypes="scccccccsssssssssssssssssssssss" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+           d="m 51.817525,165.71483 h 12.70153 l 15.90593,-38.62917 h 19.110332 15.905933 15.90593 19.14415 l 15.90593,38.62917 h 12.66771"
+           id="path245-7"
+           sodipodi:nodetypes="ccccccccc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.1764px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+           x="-12.411191"
+           y="165.32292"
+           id="text956-6"><tspan
+             sodipodi:role="line"
+             id="tspan954-5"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+             x="-12.411191"
+             y="165.32292">flatDepth</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+             x="-12.411191"
+             y="178.04343"
+             id="tspan958-6" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.1764px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+           x="-17.702856"
+           y="144.6857"
+           id="text956-6-3"><tspan
+             sodipodi:role="line"
+             id="tspan954-5-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+             x="-17.702856"
+             y="144.6857">startDepth</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+             x="-17.702856"
+             y="157.4062"
+             id="tspan958-6-7" /></text>
+        <text
+           xml:space="preserve"
+           style="font-size:11.4454px;line-height:1.25;font-family:Symbola;-inkscape-font-specification:Symbola;stroke:#000500;stroke-width:0.629;stroke-dasharray:none;stroke-opacity:1"
+           x="37.202328"
+           y="165.40349"
+           id="text962-9"><tspan
+             sodipodi:role="line"
+             id="tspan960-3"
+             style="stroke:#000500;stroke-width:0.629;stroke-dasharray:none;stroke-opacity:1"
+             x="37.202328"
+             y="165.40349">{</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:31.143px;line-height:1.25;font-family:Symbola;-inkscape-font-specification:Symbola;stroke-width:1.16786"
+           x="32.744419"
+           y="150.81233"
+           id="text962-9-4"><tspan
+             sodipodi:role="line"
+             id="tspan960-3-4"
+             style="stroke-width:1.16786"
+             x="32.744419"
+             y="150.81233">{</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.8595px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.519732"
+           x="99.642929"
+           y="121.4634"
+           id="text1070-7"><tspan
+             sodipodi:role="line"
+             id="tspan1068-4"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.519732"
+             x="99.642929"
+             y="121.4634">Inlay</tspan></text>
+        <path
+           style="fill:#008000;stroke:#008000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3, 1.5;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 44.539425,157.43507 H 187.65114"
+           id="path1235-5"
+           sodipodi:nodetypes="cc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.5441px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#008000;stroke-width:0.320403"
+           x="189.32985"
+           y="159.85658"
+           id="text1288-4"><tspan
+             sodipodi:role="line"
+             id="tspan1286-7"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#008000;stroke-width:0.320403"
+             x="189.32985"
+             y="159.85658">Artwork level</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.628999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2647"
+       width="89.402962"
+       height="20.648924"
+       x="69.381554"
+       y="261.23654"
+       ry="0.34306881" />
+    <path
+       id="rect2229-6"
+       style="fill:#ffd5d5;stroke-width:1.5;stroke-dasharray:3, 1.5;stop-color:#000000"
+       d="M 52.162367,239.76322 H 67.85364 l 15.691273,38.62938 h 15.691273 15.691274 15.69127 16.74961 l 16.22044,-38.62938 h 14.10377 c 0.0238,0 0.0469,0.002 0.0693,0.007 0.0224,0.005 0.0439,0.0113 0.0645,0.0199 0.0205,0.009 0.04,0.0192 0.0583,0.0316 0.0182,0.0123 0.0352,0.0263 0.0507,0.0418 0.0155,0.0155 0.0295,0.0325 0.0418,0.0507 0.0123,0.0182 0.0229,0.0378 0.0316,0.0583 0.009,0.0205 0.0154,0.0421 0.0199,0.0645 0.005,0.0224 0.007,0.0455 0.007,0.0693 v 42.42504 c 0,0.19007 -0.153,0.34307 -0.34306,0.34307 H 52.162367 c -0.190061,0 -0.343069,-0.153 -0.343069,-0.34307 v -42.425 c 0,-0.0238 0.0024,-0.0469 0.0069,-0.0693 0.0046,-0.0224 0.01127,-0.0439 0.01993,-0.0645 0.0087,-0.0205 0.01925,-0.04 0.03156,-0.0583 0.01231,-0.0182 0.02632,-0.0352 0.04183,-0.0507 0.0155,-0.0155 0.03249,-0.0295 0.05074,-0.0418 0.01825,-0.0123 0.03775,-0.0229 0.05828,-0.0316 0.02054,-0.009 0.0421,-0.0154 0.06448,-0.0199 0.02237,-0.005 0.04555,-0.007 0.06931,-0.007 z"
+       sodipodi:nodetypes="scccccccssssssssssssssssssssss" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 51.817525,240.24829 h 15.905931 l 15.90593,38.62939 h 15.905931 15.905933 15.90593 15.90593 l 15.90593,-38.62939 h 15.90593"
+       id="path245-8"
+       sodipodi:nodetypes="ccccccccc" />
+    <g
+       id="g2431"
+       transform="matrix(1,0,0,-1,0,448.19573)">
+      <path
+         id="rect2229-8-8"
+         style="fill:#ffd5d5;stroke-width:1.5;stroke-dasharray:3, 1.5;stop-color:#000000"
+         d="M 52.162367,222.2076 H 64.463554 L 80.89908,183.546 h 18.337106 15.691274 15.69127 19.39544 l 16.61401,38.6616 h 12.1227 c 0.0238,0 0.0469,0.002 0.0693,0.007 0.0224,0.005 0.0439,0.0113 0.0645,0.0199 0.0205,0.009 0.04,0.0192 0.0583,0.0316 0.0182,0.0123 0.0352,0.0263 0.0507,0.0418 0.0155,0.0155 0.0295,0.0325 0.0418,0.0507 0.0123,0.0182 0.0229,0.0378 0.0316,0.0583 0.009,0.0205 0.0154,0.0421 0.0199,0.0645 0.005,0.0224 0.007,0.0455 0.007,0.0693 v 3.93653 c 0,0.19006 -0.153,0.34307 -0.34306,0.34307 H 52.162367 c -0.190061,0 -0.343069,-0.15301 -0.343069,-0.34307 v -3.93649 c 0,-0.0238 0.0024,-0.0469 0.0069,-0.0693 0.0046,-0.0224 0.01127,-0.0439 0.01993,-0.0645 0.0087,-0.0205 0.01925,-0.04 0.03156,-0.0583 0.01231,-0.0182 0.02632,-0.0352 0.04183,-0.0507 0.0155,-0.0155 0.03249,-0.0295 0.05074,-0.0418 0.01825,-0.0123 0.03775,-0.0229 0.05828,-0.0316 0.02054,-0.009 0.0421,-0.0154 0.06448,-0.0199 0.02237,-0.005 0.05273,0.01 0.06931,-0.007 z"
+         sodipodi:nodetypes="scccccccsssssssssssssssssssssss" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 51.817525,221.80685 h 12.70153 l 15.90593,-38.62917 h 19.110332 15.905933 15.90593 19.14415 l 15.90593,38.62917 h 12.66771"
+         id="path245-7-4"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.1764px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+       x="-12.411191"
+       y="235.17198"
+       id="text956-6-0"><tspan
+         sodipodi:role="line"
+         id="tspan954-5-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+         x="-12.411191"
+         y="235.17198">Saw gap</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+         x="-12.411191"
+         y="247.89249"
+         id="tspan958-6-8" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.1764px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+       x="93.874397"
+       y="275.47391"
+       id="text956-6-0-6"><tspan
+         sodipodi:role="line"
+         id="tspan954-5-6-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+         x="93.874397"
+         y="275.47391">Glue gap</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.381614"
+         x="93.874397"
+         y="288.1944"
+         id="tspan958-6-8-4" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.4454px;line-height:1.25;font-family:Symbola;-inkscape-font-specification:Symbola;stroke:#000500;stroke-width:0.629;stroke-dasharray:none;stroke-opacity:1"
+       x="37.202328"
+       y="235.25255"
+       id="text962-9-9"><tspan
+         sodipodi:role="line"
+         id="tspan960-3-2"
+         style="stroke:#000500;stroke-width:0.629;stroke-dasharray:none;stroke-opacity:1"
+         x="37.202328"
+         y="235.25255">{</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.8595px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.519732"
+       x="70.009567"
+       y="217.77054"
+       id="text1070-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan1068-4-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';stroke-width:0.519732"
+         x="70.009567"
+         y="217.77054">Pocket + Inlay</tspan></text>
+    <path
+       style="fill:#008000;stroke:#008000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3, 1.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 44.539425,239.98559 H 187.65114"
+       id="path1235-5-4"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.5441px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#008000;stroke-width:0.320403"
+       x="189.32985"
+       y="242.40547"
+       id="text1288-4-9"><tspan
+         sodipodi:role="line"
+         id="tspan1286-7-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#008000;stroke-width:0.320403"
+         x="189.32985"
+         y="242.40547">Artwork level</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:2.829;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect2708"
+       width="286.40875"
+       height="291.33218"
+       x="-33.004848"
+       y="9.3337317"
+       ry="0.34306881" />
+  </g>
+</svg>
