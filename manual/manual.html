@@ -725,7 +725,7 @@ Use mouse-wheel to adjust size of the selection circle.</p>
 <div class="paragraph">
 <p>Hotkey <code>SHIFT-a</code> is for 'select next by color'.
 If your SVG elements have different colors, this hotkey lets you cycle through each color, and
-select all elements having each color.</p>
+select only the elements having that color.</p>
 </div>
 </div>
 <div class="sect3">
@@ -811,7 +811,7 @@ since you will later not be able to separate them
 <h4 id="_editing_paths">Editing paths</h4>
 <div class="paragraph">
 <p>While KrabzCAM is not intended to be a vector graphics editor, some very basic editing is supported.
-This can be useful for fixing minor issues, like self-crossing paths and last minute fixes.</p>
+This can be useful for fixing minor issues, like cleaning up self-crossing paths and doing last minute fixes.</p>
 </div>
 <div class="paragraph">
 <p>Hotkey <code>TAB</code> toggles <em>path edit mode</em>. When in path-editmode, the background color changes to light-blue,
@@ -858,7 +858,7 @@ The new toolpath will show up in the toolpath-list, and it will be visualized in
 <td class="content">
 Many operations support <em>toolpath-optimization</em>.
 Before saving G-code, the <code>Optimize</code>-button will reduce processing time by reducing the amount of travel.
-It might also be helpfull to hit <code>Optimize</code> multiple times.
+You may get more improvements by hitting <code>Optimize</code> multiple times.
 </td>
 </tr>
 </table>
@@ -996,7 +996,7 @@ determines if cutting is done on the inside or outside. This behaviour is common
 <div class="paragraph">
 <p>To avoid parts coming loose when doing profiling operations, <strong><em>tabs</em></strong> can be added.
 A tab will leave some material behind so that the parts will be held together. The tabs can be removed later
-using a manual cutting tool..like a saw or a file.</p>
+using a manual cutting tool..like a saw or knife.</p>
 </div>
 <div class="paragraph">
 <p>A tab can be added to an existing profile toolpath using hotkey <code>t</code>. Added tabs are visualized in orange color.</p>
@@ -1027,10 +1027,10 @@ using a manual cutting tool..like a saw or a file.</p>
 <p><strong>Step down</strong>: How much z-distance to advance for each pass. If targetDepth=3 and stepDown=1, you get 3 passes.</p>
 </li>
 <li>
-<p><strong>Tab-height</strong>: Determines thickness of tabs. If targetDepth=3 and tabHeight=1, max cutting depth on tabs will be z=-2.</p>
+<p><strong>Tab-height</strong>: Determines thickness of tabs. If targetDepth=3 and tabHeight=1, max cutting depth on tabs will be at z=-2.</p>
 </li>
 <li>
-<p><strong>Tab-lenght</strong>: Determines the wideness of the tabs.</p>
+<p><strong>Tab-lenght</strong>: Determines the width of the tabs.</p>
 </li>
 <li>
 <p><strong>Feed-rate</strong>: Determines speed in x/y direction during cutting.</p>
@@ -1116,11 +1116,11 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 <p><strong>Direction</strong>: Determines which way to traverse the paths, clockwise of counter-clockwise.</p>
 </li>
 <li>
-<p><strong>Pattern</strong>: Determines toolpath pattern. "<strong>Nested</strong>" creates loops nested inside each other (see image above)
-, while "*lines" create a pattern with straigh lines. Discussed <a href="https://github.com/mkrabset/krabzcam/issues/15">here</a>.</p>
+<p><strong>Pattern</strong>: Determines tool path pattern. "<strong>Nested</strong>" creates loops nested inside each other (see image above)
+, while "<strong>Line</strong>" create a pattern with straight lines. Discussed <a href="https://github.com/mkrabset/krabzcam/issues/15">here</a>.</p>
 </li>
 <li>
-<p><strong>LineAngle</strong>: Determines line-angle for line pattern. A value of zero will make horizontal lines. 90 will give vertical lines.</p>
+<p><strong>LineAngle</strong>: Determines line-angle for "Line" pattern. A value of zero will make horizontal lines. 90 will give vertical lines.</p>
 </li>
 <li>
 <p><strong>LineDirection</strong>: For line-pattern, you can choose between going back-and-forth in a zigzag manner, or doing all <em>strokes</em> in the same direction.</p>
@@ -1599,7 +1599,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-01-23 19:50:59 +0100
+Last updated 2023-01-25 17:07:31 +0100
 </div>
 </div>
 </body>
