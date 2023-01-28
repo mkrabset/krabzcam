@@ -1116,8 +1116,17 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 <p><strong>Direction</strong>: Determines which way to traverse the paths, clockwise of counter-clockwise.</p>
 </li>
 <li>
-<p><strong>Pattern</strong>: Determines tool path pattern. "<strong>Nested</strong>" creates loops nested inside each other (see image above)
-, while "<strong>Line</strong>" create a pattern with straight lines. Discussed <a href="https://github.com/mkrabset/krabzcam/issues/15">here</a>.</p>
+<p><strong>Pattern</strong>: Determines tool path pattern.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Nested</strong> creates loops nested inside each other (see image above)</p>
+</li>
+<li>
+<p><strong>Line</strong> create a pattern with straight lines. Discussed <a href="https://github.com/mkrabset/krabzcam/issues/15">here</a>.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p><strong>LineAngle</strong>: Determines line-angle for "Line" pattern. A value of zero will make horizontal lines. 90 will give vertical lines.</p>
@@ -1126,8 +1135,20 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 <p><strong>LineDirection</strong>: For line-pattern, you can choose between going back-and-forth in a zigzag manner, or doing all <em>strokes</em> in the same direction.</p>
 </li>
 <li>
-<p><strong>Order</strong>: Determines processing order. "<strong>Level First</strong>" will finish one depth for all elements first, before entering next pass.
-"<strong>Depth first</strong>" will go all the way down for each element before processing the next.</p>
+<p><strong>LayerDirection</strong>: For nested-pattern, you can choose between going through the layers in <strong>Inward</strong> or <strong>Outward</strong> direction.</p>
+</li>
+<li>
+<p><strong>Order</strong>: Determines processing order.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Level First</strong> will finish one depth for all elements first, before entering next pass.</p>
+</li>
+<li>
+<p><strong>Depth first</strong> will go all the way down for each element before processing the next.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -1599,7 +1620,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-01-25 17:07:31 +0100
+Last updated 2023-01-28 14:30:53 +0100
 </div>
 </div>
 </body>
