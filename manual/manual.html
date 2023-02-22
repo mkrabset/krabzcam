@@ -495,29 +495,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_properties_5">Properties</a></li>
 </ul>
 </li>
-<li><a href="#_relief_rough_relief_rough">Relief rough (RELIEF_ROUGH)</a>
+<li><a href="#_laser_raster_laserraster">Laser raster (LASERRASTER)</a>
 <ul class="sectlevel3">
 <li><a href="#_properties_6">Properties</a></li>
 </ul>
 </li>
-<li><a href="#_relief_follow_relief_follow">Relief follow (RELIEF_FOLLOW)</a>
+<li><a href="#_relief_rough_relief_rough">Relief rough (RELIEF_ROUGH)</a>
 <ul class="sectlevel3">
 <li><a href="#_properties_7">Properties</a></li>
 </ul>
 </li>
-<li><a href="#_drag_knife_dragknife">Drag knife (DRAGKNIFE)</a>
+<li><a href="#_relief_follow_relief_follow">Relief follow (RELIEF_FOLLOW)</a>
 <ul class="sectlevel3">
 <li><a href="#_properties_8">Properties</a></li>
 </ul>
 </li>
-<li><a href="#_v_pocket_vpocket">V-Pocket (VPOCKET)</a>
+<li><a href="#_drag_knife_dragknife">Drag knife (DRAGKNIFE)</a>
 <ul class="sectlevel3">
 <li><a href="#_properties_9">Properties</a></li>
 </ul>
 </li>
-<li><a href="#_v_inlay_vinlay">V-Inlay (VINLAY)</a>
+<li><a href="#_v_pocket_vpocket">V-Pocket (VPOCKET)</a>
 <ul class="sectlevel3">
 <li><a href="#_properties_10">Properties</a></li>
+</ul>
+</li>
+<li><a href="#_v_inlay_vinlay">V-Inlay (VINLAY)</a>
+<ul class="sectlevel3">
+<li><a href="#_properties_11">Properties</a></li>
 <li><a href="#_start_depth_and_flat_depth">Start-depth and Flat-depth</a></li>
 </ul>
 </li>
@@ -933,6 +938,9 @@ performing simulations and visual inspections.
 <p><strong>FOLLOW_PATH_LASER</strong>, for following path at center with laser tool.</p>
 </li>
 <li>
+<p><strong>LASERRASTER</strong>, for engraving bitmap images with laser tool.</p>
+</li>
+<li>
 <p><strong>RELIEF_ROUGH</strong>, for relief roughing operations before using <strong>RELIEF_FOLLOW</strong>.</p>
 </li>
 <li>
@@ -946,6 +954,12 @@ performing simulations and visual inspections.
 </li>
 <li>
 <p><strong>VINLAY</strong>, for creating inlays to fit inside v-pockets.</p>
+</li>
+<li>
+<p><strong>HALFTONE</strong>, for creating halftone images using a v-bit.</p>
+</li>
+<li>
+<p><strong>STIPPLE</strong>, for creating stipple images using a laser or drill tool.</p>
 </li>
 </ul>
 </div>
@@ -1286,13 +1300,72 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 </div>
 </div>
 <div class="sect2">
+<h3 id="_laser_raster_laserraster">Laser raster (LASERRASTER)</h3>
+<div class="paragraph">
+<p>This operation type is used to laser-engrave images.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="laserraster.png" alt="laserraster">
+</div>
+<div class="title">Figure 10. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
+</div>
+<div class="sect3">
+<h4 id="_properties_6">Properties</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Feed-rate</strong>: Determines speed in x/y direction during engraving.</p>
+</li>
+<li>
+<p><strong>Resolution</strong>: Determines output <em>pixel size</em>.</p>
+</li>
+<li>
+<p><strong>Direction</strong>: Scan line direction.</p>
+</li>
+<li>
+<p><strong>Laser on command</strong>: M3 or M4, depending on cnc firmware. Typically, M4 for Grbl in laser-mode.</p>
+</li>
+<li>
+<p><strong>Smoothing</strong>: Optional 3x3 low-pass filter to reduce noise and aliasing.</p>
+</li>
+<li>
+<p><strong>White threshold</strong>: Pixels above this value are considered white.</p>
+</li>
+<li>
+<p><strong>Black threshold</strong>: Pixels below this value are considered black.</p>
+</li>
+<li>
+<p><strong>Min S-value</strong>: Gcode S-value for minimum laser output.</p>
+</li>
+<li>
+<p><strong>Max S-value</strong>: Gcode S-value for maximum laser output.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+It takes a bit of trial-and-error to get these property values tuned correctly.
+A good ide is to use a <em>test pattern</em>. Lots of those are available on the web.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_relief_rough_relief_rough">Relief rough (RELIEF_ROUGH)</h3>
 <div class="paragraph">
 <p>This operation type is used as a roughing operation for removing excess material before finishing off with a 'relief follow'-operation.
 Instead of using vector graphics as input, this operation type requires a grayscale image. This image is interpreted as a height-map.</p>
 </div>
 <div class="sect3">
-<h4 id="_properties_6">Properties</h4>
+<h4 id="_properties_7">Properties</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1337,13 +1410,13 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-toolpath.png" alt="relief toolpath">
 </div>
-<div class="title">Figure 10. A RELIEF_FOLLOW toolpath</div>
+<div class="title">Figure 11. A RELIEF_FOLLOW toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="relief-visualized.png" alt="relief visualized">
 </div>
-<div class="title">Figure 11. Toolpath visualized in NCViewer</div>
+<div class="title">Figure 12. Toolpath visualized in NCViewer</div>
 </div>
 <div class="paragraph">
 <p>As shown on the above image, RELIEF_FOLLOW operations generate toolpaths running in a horizontal zig-zag pattern.</p>
@@ -1352,10 +1425,10 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-result.png" alt="relief result">
 </div>
-<div class="title">Figure 12. Final result of a relief toolpath</div>
+<div class="title">Figure 13. Final result of a relief toolpath</div>
 </div>
 <div class="sect3">
-<h4 id="_properties_7">Properties</h4>
+<h4 id="_properties_8">Properties</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1406,10 +1479,10 @@ It can be used for cutting soft materials like vinyl, creating stickers, cutting
 <div class="content">
 <img src="drag-knife.png" alt="drag knife">
 </div>
-<div class="title">Figure 13. A drag-knife toolpath</div>
+<div class="title">Figure 14. A drag-knife toolpath</div>
 </div>
 <div class="sect3">
-<h4 id="_properties_8">Properties</h4>
+<h4 id="_properties_9">Properties</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1446,13 +1519,13 @@ by the depth of cut. The <strong>VPOCKET</strong> operation type lets you create
 <div class="content">
 <img src="vpocket-toolpath.png" alt="vpocket toolpath">
 </div>
-<div class="title">Figure 14. A V-pocket toolpath</div>
+<div class="title">Figure 15. A V-pocket toolpath</div>
 </div>
 <div class="paragraph">
 <p>The image above shows a v-pocket toolpath. The area affected by the v-bit is colored light-blue.</p>
 </div>
 <div class="sect3">
-<h4 id="_properties_9">Properties</h4>
+<h4 id="_properties_10">Properties</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1491,19 +1564,19 @@ This button opens up a dialog for configuring this cleanup-operation.</p>
 <div class="content">
 <img src="add-vpocket-cleanup-dialog.png" alt="add vpocket cleanup dialog">
 </div>
-<div class="title">Figure 15. Adding cleanup operation for VPOCKET</div>
+<div class="title">Figure 16. Adding cleanup operation for VPOCKET</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-cleanup-toolpath.png" alt="vpocket cleanup toolpath">
 </div>
-<div class="title">Figure 16. The cleanup (flattening) toolpath</div>
+<div class="title">Figure 17. The cleanup (flattening) toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-example.jpg" alt="vpocket example">
 </div>
-<div class="title">Figure 17. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
+<div class="title">Figure 18. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
 </div>
 </div>
 </div>
@@ -1520,10 +1593,10 @@ with a wooden 'plug'(inlay) of another wood tone. This is a technique called '<e
 <div class="content">
 <img src="wooden-inlay-example.jpg" alt="wooden inlay example">
 </div>
-<div class="title">Figure 18. A wooden inlay coaster</div>
+<div class="title">Figure 19. A wooden inlay coaster</div>
 </div>
 <div class="sect3">
-<h4 id="_properties_10">Properties</h4>
+<h4 id="_properties_11">Properties</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1565,7 +1638,7 @@ with a wooden 'plug'(inlay) of another wood tone. This is a technique called '<e
 <div class="content">
 <img src="vinlay-toolpath.png" alt="vinlay toolpath">
 </div>
-<div class="title">Figure 19. An v-inlay toolpath. Automatic boundary shown in red.</div>
+<div class="title">Figure 20. An v-inlay toolpath. Automatic boundary shown in red.</div>
 </div>
 <div class="paragraph">
 <p>In the example above, all material between the traced toolpath and the boundary (in red) needs to be removed.
@@ -1578,7 +1651,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="vinlay-cleanup.png" alt="vinlay cleanup">
 </div>
-<div class="title">Figure 20. A cleanup toolpath for inlay</div>
+<div class="title">Figure 21. A cleanup toolpath for inlay</div>
 </div>
 </div>
 <div class="sect3">
@@ -1590,7 +1663,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="wooden-inlay-params.svg" alt="wooden inlay params">
 </div>
-<div class="title">Figure 21. Visualization of startDepth and flatDepth</div>
+<div class="title">Figure 22. Visualization of startDepth and flatDepth</div>
 </div>
 <div class="paragraph">
 <p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.
@@ -1617,7 +1690,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 <div class="content">
 <img src="wooden-inlay-param-rules.svg" alt="wooden inlay param rules">
 </div>
-<div class="title">Figure 22. Rules for flatDepth and startDepth</div>
+<div class="title">Figure 23. Rules for flatDepth and startDepth</div>
 </div>
 </div>
 </div>
@@ -1643,7 +1716,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-11 15:04:31 +0100
+Last updated 2023-02-22 22:31:03 +0100
 </div>
 </div>
 </body>
