@@ -36,6 +36,17 @@
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /**
+   *  @preserve  JavaScript implementation of
+   *  Algorithm for Automatically Fitting Digitized Curves
+   *  by Philip J. Schneider
+   *  "Graphics Gems", Academic Press, 1990
+   *
+   *  The MIT License (MIT)
+   *
+   *  https://github.com/soswow/fit-curves
+   */
+
+/**
  * @license React
  * react-dom.production.min.js
  *
