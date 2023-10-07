@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="author" content="Marius Krabset">
 <title>Welcome to the KrabzCAM manual!</title>
 <style>
@@ -281,6 +281,22 @@ This is done by using the "Load SVG/DXF" button in the tool panel.</p>
 <p>If you need to load from multiple files, use the "Add SVG/DXF" button instead.
 This will add the content without removing what&#8217;s already loaded.</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+KrabzCAM use 96dpi pixel resolution for SVG files.
+Another commonly used pixel resolution is 72dpi.
+If your svg artwork looks too small when loaded into KrabzCAM, this may be the reason.
+To correct a 72dpi svg loaded into KrabzCAM. Set pivot to origin, and scale by 1.3333.
+See instructions about pivot and scaling below.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>If you don&#8217;t have any files and only want to work with simple shapes, you can use hotkeys in the 2D view:</p>
 </div>
@@ -408,7 +424,9 @@ and all scaling will scale out from, or in towards this point.</p>
 <div class="sect3">
 <h4 id="_typing_exact_values">Typing exact values</h4>
 <div class="paragraph">
-<p>Keyboard can be used for typing exact values during scaling, rotation and single axis move operations.</p>
+<p>Keyboard can be used for typing exact values during scaling, rotation and single axis move operations.
+Make sure mouse pointer is inside the 2d view area while typing the number, and complete operation with <code>Enter</code> or left mouse button.
+Toggle negative/positive value with <code>-</code>-key.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1349,7 +1367,7 @@ This software is free of use. It comes without any warranty. Use it at your own 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-10-01 22:41:58 +0200
+Last updated 2023-10-08 00:23:01 +0200
 </div>
 </div>
 </body>
