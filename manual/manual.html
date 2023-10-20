@@ -16,6 +16,11 @@ code {
     background: rgba(160,210,255,255) !important;
     font-weight: bolder !important;
 }
+
+
+div.sect2 {
+    margin-bottom: 7em;
+}
 </style>
 </head>
 <body class="article toc2 toc-left">
@@ -170,6 +175,9 @@ This manual will provide you with information to get started using KrabzCAM.</p>
 <p>Load/save project</p>
 </li>
 <li>
+<p>Set global settings</p>
+</li>
+<li>
 <p>Load/add vector graphics (SVG or DXF)</p>
 </li>
 <li>
@@ -288,11 +296,9 @@ This will add the content without removing what&#8217;s already loaded.</p>
 <div class="title">Tip</div>
 </td>
 <td class="content">
-KrabzCAM use 96dpi pixel resolution for SVG files.
+KrabzCAM use 96dpi pixel resolution by default for SVG files.
 Another commonly used pixel resolution is 72dpi.
-If your svg artwork looks too small when loaded into KrabzCAM, this may be the reason.
-To correct a 72dpi svg loaded into KrabzCAM. Set pivot to origin, and scale by 1.3333.
-See instructions about pivot and scaling below.
+You can change the SVG px resolution for import by pressing the <code>Settings</code>-button in the top-right corner of the tool panel.
 </td>
 </tr>
 </table>
@@ -842,7 +848,7 @@ Generated toolpaths will follow the graphics at center, and the operation type s
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tool diameter</strong>:  Diameter of the milling tool. For this operation type, this property only affects visualization in the 2D view.</p>
+<p><strong>Tool diameter</strong>:  Diameter of the milling tool.</p>
 </li>
 <li>
 <p><strong>Target depth</strong>: Determines depth of cut, relative to z-origin. Given as a positive number.</p>
@@ -863,10 +869,20 @@ Generated toolpaths will follow the graphics at center, and the operation type s
 <p><strong>Spindle-speed</strong>: Determines spindle speed.</p>
 </li>
 <li>
+<p><strong>Shorten open paths by tool radius</strong>: If you don&#8217;t want the cut to extends past the end of open paths due to the tool having a non-zero radius,
+you can set this to true. See illustration below.</p>
+</li>
+<li>
 <p><strong>Order</strong>: Determines processing order. "<strong>Level First</strong>" will finish one depth for all elements first, before entering next pass.
 "<strong>Depth first</strong>" will go all the way down for each element before processing the next.</p>
 </li>
 </ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="shortenByRadius.png" alt="shortenByRadius">
+</div>
+<div class="title">Figure 9. <strong>Shorten open paths by tool radius</strong>, difference between true and false</div>
 </div>
 </div>
 </div>
@@ -881,7 +897,7 @@ Usually it will make sense to use simple shapes (like circles) for this type of 
 <div class="content">
 <img src="drilling.png" alt="drilling">
 </div>
-<div class="title">Figure 9. Toolpath for drilling holes in a circuit board</div>
+<div class="title">Figure 10. Toolpath for drilling holes in a circuit board</div>
 </div>
 <div class="sect3">
 <h4 id="_properties_4">Properties</h4>
@@ -942,7 +958,7 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 <div class="content">
 <img src="laserraster.png" alt="laserraster">
 </div>
-<div class="title">Figure 10. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
+<div class="title">Figure 11. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
 </div>
 <div class="sect3">
 <h4 id="_properties_6">Properties</h4>
@@ -1044,13 +1060,13 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-toolpath.png" alt="relief toolpath">
 </div>
-<div class="title">Figure 11. A RELIEF_FOLLOW toolpath</div>
+<div class="title">Figure 12. A RELIEF_FOLLOW toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="relief-visualized.png" alt="relief visualized">
 </div>
-<div class="title">Figure 12. Toolpath visualized in NCViewer</div>
+<div class="title">Figure 13. Toolpath visualized in NCViewer</div>
 </div>
 <div class="paragraph">
 <p>As shown on the above image, RELIEF_FOLLOW operations generate toolpaths running in a horizontal zig-zag pattern.</p>
@@ -1059,7 +1075,7 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-result.png" alt="relief result">
 </div>
-<div class="title">Figure 13. Final result of a relief toolpath</div>
+<div class="title">Figure 14. Final result of a relief toolpath</div>
 </div>
 <div class="sect3">
 <h4 id="_properties_8">Properties</h4>
@@ -1113,7 +1129,7 @@ It can be used for cutting soft materials like vinyl, creating stickers, cutting
 <div class="content">
 <img src="drag-knife.png" alt="drag knife">
 </div>
-<div class="title">Figure 14. A drag-knife toolpath</div>
+<div class="title">Figure 15. A drag-knife toolpath</div>
 </div>
 <div class="sect3">
 <h4 id="_properties_9">Properties</h4>
@@ -1153,7 +1169,7 @@ by the depth of cut. The <strong>VPOCKET</strong> operation type lets you create
 <div class="content">
 <img src="vpocket-toolpath.png" alt="vpocket toolpath">
 </div>
-<div class="title">Figure 15. A V-pocket toolpath</div>
+<div class="title">Figure 16. A V-pocket toolpath</div>
 </div>
 <div class="paragraph">
 <p>The image above shows a v-pocket toolpath. The area affected by the v-bit is colored light-blue.</p>
@@ -1198,19 +1214,19 @@ This button opens up a dialog for configuring this cleanup-operation.</p>
 <div class="content">
 <img src="add-vpocket-cleanup-dialog.png" alt="add vpocket cleanup dialog">
 </div>
-<div class="title">Figure 16. Adding cleanup operation for VPOCKET</div>
+<div class="title">Figure 17. Adding cleanup operation for VPOCKET</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-cleanup-toolpath.png" alt="vpocket cleanup toolpath">
 </div>
-<div class="title">Figure 17. The cleanup (flattening) toolpath</div>
+<div class="title">Figure 18. The cleanup (flattening) toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-example.jpg" alt="vpocket example">
 </div>
-<div class="title">Figure 18. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
+<div class="title">Figure 19. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
 </div>
 </div>
 </div>
@@ -1227,7 +1243,7 @@ with a wooden 'plug'(inlay) of another wood tone. This is a technique called '<e
 <div class="content">
 <img src="wooden-inlay-example.jpg" alt="wooden inlay example">
 </div>
-<div class="title">Figure 19. A wooden inlay coaster</div>
+<div class="title">Figure 20. A wooden inlay coaster</div>
 </div>
 <div class="sect3">
 <h4 id="_properties_11">Properties</h4>
@@ -1272,7 +1288,7 @@ with a wooden 'plug'(inlay) of another wood tone. This is a technique called '<e
 <div class="content">
 <img src="vinlay-toolpath.png" alt="vinlay toolpath">
 </div>
-<div class="title">Figure 20. An v-inlay toolpath. Automatic boundary shown in red.</div>
+<div class="title">Figure 21. An v-inlay toolpath. Automatic boundary shown in red.</div>
 </div>
 <div class="paragraph">
 <p>In the example above, all material between the traced toolpath and the boundary (in red) needs to be removed.
@@ -1285,7 +1301,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="vinlay-cleanup.png" alt="vinlay cleanup">
 </div>
-<div class="title">Figure 21. A cleanup toolpath for inlay</div>
+<div class="title">Figure 22. A cleanup toolpath for inlay</div>
 </div>
 </div>
 <div class="sect3">
@@ -1297,7 +1313,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="wooden-inlay-params.svg" alt="wooden inlay params">
 </div>
-<div class="title">Figure 22. Visualization of startDepth and flatDepth</div>
+<div class="title">Figure 23. Visualization of startDepth and flatDepth</div>
 </div>
 <div class="paragraph">
 <p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.
@@ -1324,7 +1340,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 <div class="content">
 <img src="wooden-inlay-param-rules.svg" alt="wooden inlay param rules">
 </div>
-<div class="title">Figure 23. Rules for flatDepth and startDepth</div>
+<div class="title">Figure 24. Rules for flatDepth and startDepth</div>
 </div>
 </div>
 </div>
@@ -1367,7 +1383,7 @@ This software is free of use. It comes without any warranty. Use it at your own 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-10-08 00:25:28 +0200
+Last updated 2023-10-20 13:57:30 +0200
 </div>
 </div>
 </body>
