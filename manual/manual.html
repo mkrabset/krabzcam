@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Marius Krabset">
 <title>Welcome to the KrabzCAM manual!</title>
 <style>
@@ -64,59 +64,18 @@ div.sect2 {
 <li><a href="#_operation_types">Operation types</a>
 <ul class="sectlevel2">
 <li><a href="#_some_definitions">Some definitions</a></li>
-<li><a href="#_profile_inside_outside_profile_insideprofile_outside">Profile inside / outside (PROFILE_INSIDE,PROFILE_OUTSIDE)</a>
+<li><a href="#_profile_inside_outside">Profile inside / outside</a></li>
+<li><a href="#_pocket">Pocket</a></li>
+<li><a href="#_engrave">Engrave</a></li>
+<li><a href="#_drill">Drill</a></li>
+<li><a href="#_laser">Laser</a></li>
+<li><a href="#_laser_raster">Laser raster</a></li>
+<li><a href="#_relief_rough">Relief rough</a></li>
+<li><a href="#_relief_follow">Relief follow</a></li>
+<li><a href="#_drag_knife">Drag knife</a></li>
+<li><a href="#_v_pocket">V-Pocket</a></li>
+<li><a href="#_v_inlay">V-Inlay</a>
 <ul class="sectlevel3">
-<li><a href="#_properties">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_pocket_pocket">Pocket (POCKET)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_2">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_engrave_follow_path">Engrave (FOLLOW_PATH)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_3">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_drill_drill">Drill (DRILL)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_4">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_laser_follow_path_laser">Laser (FOLLOW_PATH_LASER)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_5">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_laser_raster_laserraster">Laser raster (LASERRASTER)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_6">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_relief_rough_relief_rough">Relief rough (RELIEF_ROUGH)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_7">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_relief_follow_relief_follow">Relief follow (RELIEF_FOLLOW)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_8">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_drag_knife_dragknife">Drag knife (DRAGKNIFE)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_9">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_v_pocket_vpocket">V-Pocket (VPOCKET)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_10">Properties</a></li>
-</ul>
-</li>
-<li><a href="#_v_inlay_vinlay">V-Inlay (VINLAY)</a>
-<ul class="sectlevel3">
-<li><a href="#_properties_11">Properties</a></li>
 <li><a href="#_start_depth_and_flat_depth">Start-depth and Flat-depth</a></li>
 </ul>
 </li>
@@ -640,7 +599,7 @@ If you want to go back to using the 'factory'-settings, you can press the <code>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_profile_inside_outside_profile_insideprofile_outside">Profile inside / outside (PROFILE_INSIDE,PROFILE_OUTSIDE)</h3>
+<h3 id="_profile_inside_outside">Profile inside / outside</h3>
 <div class="paragraph">
 <p>For profiling operations the operation types are <strong>PROFILE_INSIDE</strong> and <strong>PROFILE_OUTSIDE</strong>, depending
 on which part to keep, the piece with the hole, or the piece leaving the hole.</p>
@@ -684,8 +643,9 @@ using a manual cutting tool..like a saw or knife.</p>
 </div>
 <div class="title">Figure 5. Adding tabs</div>
 </div>
-<div class="sect3">
-<h4 id="_properties">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -740,9 +700,8 @@ using a manual cutting tool..like a saw or knife.</p>
 <div class="title">Figure 6. Using dog bones</div>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_pocket_pocket">Pocket (POCKET)</h3>
+<h3 id="_pocket">Pocket</h3>
 <div class="paragraph">
 <p>The operation type <strong>POCKET</strong> is used for creating pocketing tool paths.
 This operation type has lots in common with the above profiling operations.
@@ -755,8 +714,9 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 </div>
 <div class="title">Figure 7. A pocket toolpath (with 'Nested' pattern)</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_2">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -830,9 +790,8 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 </ul>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_engrave_follow_path">Engrave (FOLLOW_PATH)</h3>
+<h3 id="_engrave">Engrave</h3>
 <div class="paragraph">
 <p>The operation type <strong>FOLLOW_PATH</strong> is mostly used for engraving task.
 Generated toolpaths will follow the graphics at center, and the operation type supports both open and closed path elements.</p>
@@ -843,8 +802,9 @@ Generated toolpaths will follow the graphics at center, and the operation type s
 </div>
 <div class="title">Figure 8. A FOLLOW_PATH toolpath for engraving</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_3">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -885,9 +845,8 @@ you can set this to true. See illustration below.</p>
 <div class="title">Figure 9. <strong>Shorten open paths by tool radius</strong>, difference between true and false</div>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_drill_drill">Drill (DRILL)</h3>
+<h3 id="_drill">Drill</h3>
 <div class="paragraph">
 <p>The operation type <strong>DRILL</strong> is used for drilling holes.
 It will calculate a center-point for each selected graphical element (open or closed), and drill a hole at that position.
@@ -899,8 +858,9 @@ Usually it will make sense to use simple shapes (like circles) for this type of 
 </div>
 <div class="title">Figure 10. Toolpath for drilling holes in a circuit board</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_4">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -925,15 +885,15 @@ Used to clear out chips in the drill hole.</p>
 </ul>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_laser_follow_path_laser">Laser (FOLLOW_PATH_LASER)</h3>
+<h3 id="_laser">Laser</h3>
 <div class="paragraph">
 <p>The operation type <strong>FOLLOW_PATH_LASER</strong> is available for laser engraving tasks.
 This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for use with lasers instead of milling tools.</p>
 </div>
-<div class="sect3">
-<h4 id="_properties_5">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -948,11 +908,10 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 </ul>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_laser_raster_laserraster">Laser raster (LASERRASTER)</h3>
+<h3 id="_laser_raster">Laser raster</h3>
 <div class="paragraph">
-<p>This operation type is used to laser-engrave images.</p>
+<p>The operation type <strong>LASERRASTER</strong> is used to laser-engrave images.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -960,8 +919,9 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 </div>
 <div class="title">Figure 11. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_6">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1007,15 +967,15 @@ A good ide is to use a <em>test pattern</em>. Lots of those are available on the
 </table>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_relief_rough_relief_rough">Relief rough (RELIEF_ROUGH)</h3>
+<h3 id="_relief_rough">Relief rough</h3>
 <div class="paragraph">
-<p>This operation type is used as a roughing operation for removing excess material before finishing off with a 'relief follow'-operation.
+<p>The operation type <strong>RELIEF_ROUGH</strong> is used as a roughing operation for removing excess material before finishing off with a 'relief follow'-operation.
 Instead of using vector graphics as input, this operation type requires a grayscale image. This image is interpreted as a height-map.</p>
 </div>
-<div class="sect3">
-<h4 id="_properties_7">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1048,11 +1008,10 @@ Instead of using vector graphics as input, this operation type requires a graysc
 </ul>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_relief_follow_relief_follow">Relief follow (RELIEF_FOLLOW)</h3>
+<h3 id="_relief_follow">Relief follow</h3>
 <div class="paragraph">
-<p>This operation type is used to create reliefs based on grayscale images interpreted as height-maps.
+<p>The operation type <strong>RELIEF_FOLLOW</strong> is used to create reliefs based on grayscale images interpreted as height-maps.
 Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see above) to remove most of the material
 , and then follow with a <strong>RELIEF_FOLLOW</strong> to carve out the details with a small-diameter tool.</p>
 </div>
@@ -1077,8 +1036,9 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 </div>
 <div class="title">Figure 14. Final result of a relief toolpath</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_8">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1115,24 +1075,32 @@ This setting prevents a V-shaped tool from affecting its surroundings when the '
 </ul>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_drag_knife_dragknife">Drag knife (DRAGKNIFE)</h3>
+<h3 id="_drag_knife">Drag knife</h3>
 <div class="paragraph">
-<p>A drag knife is a cutting tool which is typically mounted on a spindle (without enabling the spindle motor!!).</p>
+<p>The operation type <strong>DRAGKNIFE</strong> is used to create drag knife toolpaths.
+A drag knife is a cutting tool which is typically mounted on a spindle (without enabling the spindle motor!!).
+It can be used for cutting soft materials like vinyl, creating stickers, cutting/engraving glass etc.</p>
 </div>
 <div class="paragraph">
-<p>It rotates freely, and the cutting point is offset from the center of rotation so that you kind of drag it after you when moving.
-It can be used for cutting soft materials like vinyl, creating stickers, cutting/engraving glass etc.</p>
+<p>The drag knife rotates freely, and the cutting point is offset from the center of rotation so that it will be dragged behind when we are moving in xy-direction.
+Whenever the desired cut has a sudden change in direction, the center of rotation needs to be moved to a new location, while the tip of the knife remains stationary.
+This results in a circular movement called a <em>swivel action</em>.
+While performing a swivel action, the knife needs to be in contact with the material so the knife only rotates while the tip stays at the same location.</p>
+</div>
+<div class="paragraph">
+<p>Typically, the knife will be lifted slightly during a swivel, to prevent harm to the material caused by knife rotation.
+But not too much! The knife still needs to be in contact with the material.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="drag-knife.png" alt="drag knife">
 </div>
-<div class="title">Figure 15. A drag-knife toolpath</div>
+<div class="title">Figure 15. A drag-knife toolpath. On each corner of the rectangular boundary we can see 90 degree swivel actions.</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_9">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1158,12 +1126,12 @@ It&#8217;s a circular movement around the tip of the knife, without the tip actu
 </ul>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_v_pocket_vpocket">V-Pocket (VPOCKET)</h3>
+<h3 id="_v_pocket">V-Pocket</h3>
 <div class="paragraph">
-<p>By using a V-shaped bit you can really create high-detail pockets, since the level of detail can be controlled
-by the depth of cut. The <strong>VPOCKET</strong> operation type lets you create pockets using a V-bit of a given angle.</p>
+<p>The <strong>VPOCKET</strong> operation type lets you create pockets using a V-bit of a given angle.
+By using a V-shaped bit you can really create high-detail pockets, since the level of detail can be controlled
+by the depth of cut.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1174,8 +1142,9 @@ by the depth of cut. The <strong>VPOCKET</strong> operation type lets you create
 <div class="paragraph">
 <p>The image above shows a v-pocket toolpath. The area affected by the v-bit is colored light-blue.</p>
 </div>
-<div class="sect3">
-<h4 id="_properties_10">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1229,12 +1198,12 @@ This button opens up a dialog for configuring this cleanup-operation.</p>
 <div class="title">Figure 19. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_v_inlay_vinlay">V-Inlay (VINLAY)</h3>
+<h3 id="_v_inlay">V-Inlay</h3>
 <div class="paragraph">
-<p>Instead of filling the v-pockets with paint (like in the above image), another option is to fill it
-with a wooden 'plug'(inlay) of another wood tone. This is a technique called '<em>wooden inlay</em>'.</p>
+<p>The <strong>VINLAY</strong> operation type lets you create 'plugs' for V-bit pockets.
+Instead of filling the v-pockets with paint (like in the above image), another option is to fill it
+with a wooden 'plug'(inlay) with another wood tone. This is a technique called '<em>wooden inlay</em>'.</p>
 </div>
 <div class="paragraph">
 <p>This is the purpose of the <strong>VINLAY</strong> operation type.</p>
@@ -1245,8 +1214,9 @@ with a wooden 'plug'(inlay) of another wood tone. This is a technique called '<e
 </div>
 <div class="title">Figure 20. A wooden inlay coaster</div>
 </div>
-<div class="sect3">
-<h4 id="_properties_11">Properties</h4>
+<div class="paragraph">
+<p><strong>Properties</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1303,7 +1273,6 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 </div>
 <div class="title">Figure 22. A cleanup toolpath for inlay</div>
 </div>
-</div>
 <div class="sect3">
 <h4 id="_start_depth_and_flat_depth">Start-depth and Flat-depth</h4>
 <div class="paragraph">
@@ -1316,8 +1285,10 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="title">Figure 23. Visualization of startDepth and flatDepth</div>
 </div>
 <div class="paragraph">
-<p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.
-For inlays it&#8217;s a bit more complicated.
+<p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.</p>
+</div>
+<div class="paragraph">
+<p>For inlays it&#8217;s a bit more complicated.
 The startDepth is the distance from the z=zero down to the <em>artwork level</em> (shown with the dotted green line).
 The artwork-level is the level where the V-bit draws the exact image given by the artwork.
 When the inlay is inserted into the pocket, their artwork-levels must align.</p>
@@ -1383,7 +1354,7 @@ This software is free of use. It comes without any warranty. Use it at your own 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-10-20 13:57:30 +0200
+Last updated 2023-10-28 12:39:05 +0200
 </div>
 </div>
 </body>
