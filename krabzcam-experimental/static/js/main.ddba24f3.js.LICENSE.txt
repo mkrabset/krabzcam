@@ -1,0 +1,325 @@
+/*
+      object-assign
+      (c) Sindre Sorhus
+      @license MIT
+      */
+
+/*!
+         * The buffer module from node.js, for the browser.
+         *
+         * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+         * @license  MIT
+         */
+
+/*!
+         * The buffer module from node.js, for the browser.
+         *
+         * @author   Feross Aboukhadijeh <https://feross.org>
+         * @license  MIT
+         */
+
+/*!
+         * Timm
+         *
+         * Immutability helpers with fast reads and acceptable writes.
+         *
+         * @copyright Guillermo Grau Panea 2016
+         * @license MIT
+         */
+
+/*!
+       * Determine if an object is a Buffer
+       *
+       * @author   Feross Aboukhadijeh <https://feross.org>
+       * @license  MIT
+       */
+
+/*!
+   * isobject <https://github.com/jonschlinkert/isobject>
+   *
+   * Copyright (c) 2014-2017, Jon Schlinkert.
+   * Released under the MIT License.
+   */
+
+/*!
+  Copyright (c) 2018 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * github-buttons v2.21.1
+ * (c) 2021 なつき
+ * @license BSD-2-Clause
+ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * cie94.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * ciede2000.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * cmetric.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * constants.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * euclidean.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * hueStatistics.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * iq.ts - Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * lab2rgb.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * lab2xyz.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * manhattanNeuQuant.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * palette.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * pngQuant.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * point.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * pointContainer.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * rgb2hsl.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * rgb2lab.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * rgb2xyz.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * wuQuant.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * xyz2lab.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * xyz2rgb.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve TypeScript port:
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * colorHistogram.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve TypeScript port:
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * neuquant.ts - part of Image Quantization Library
+             */
+
+/**
+             * @preserve TypeScript port:
+             * Copyright 2015-2016 Igor Bezkrovnyi
+             * All rights reserved. (MIT Licensed)
+             *
+             * rgbquant.ts - part of Image Quantization Library
+             */
+
+/**
+   *  @preserve  JavaScript implementation of
+   *  Algorithm for Automatically Fitting Digitized Curves
+   *  by Philip J. Schneider
+   *  "Graphics Gems", Academic Press, 1990
+   *
+   *  The MIT License (MIT)
+   *
+   *  https://github.com/soswow/fit-curves
+   */
+
+/**
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license
+ * Flo-mat  <https://www.npmjs.com/package/flo-mat>
+ * Released under MIT license <https://www.npmjs.com/package/flo-mat#license>
+ */
+
+/**
+ * @license
+ * Path-that-svg <https://www.npmjs.com/package/path-that-svg/>
+ * Released under MIT license
+ */
+
+/**
+ * @license
+ * Svg-path-parser <https://www.npmjs.com/package/svg-path-parser/>
+ * Released under MIT license <https://github.com/hughsk/svg-path-parser/blob/master/LICENSE/>
+ */
+
+/**
+ * @license
+ * FFlate <https://www.npmjs.com/package/fflate/>
+ * Released under MIT license <https://github.com/101arrowz/fflate/blob/HEAD/LICENSE/>
+ */
+
