@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Marius Krabset">
 <title>Welcome to the KrabzCAM manual!</title>
 <style>
@@ -64,7 +64,12 @@ div.sect2 {
 <li><a href="#_operation_types">Operation types</a>
 <ul class="sectlevel2">
 <li><a href="#_some_definitions">Some definitions</a></li>
-<li><a href="#_profile_inside_outside">Profile inside / outside</a></li>
+<li><a href="#_profile_inside_outside">Profile inside / outside</a>
+<ul class="sectlevel3">
+<li><a href="#_using_tabs">Using tabs</a></li>
+<li><a href="#_changing_entrypoints">Changing entrypoints</a></li>
+</ul>
+</li>
 <li><a href="#_pocket">Pocket</a></li>
 <li><a href="#_engrave">Engrave</a></li>
 <li><a href="#_drill">Drill</a></li>
@@ -632,6 +637,8 @@ This is because it is contained within the heptagon.
 When paths are nested like this, the <em>"odd/even-ness"</em> of the nesting level
 determines if cutting is done on the inside or outside. This behaviour is common for both profiles and pockets.</p>
 </div>
+<div class="sect3">
+<h4 id="_using_tabs">Using tabs</h4>
 <div class="paragraph">
 <p>To avoid parts coming loose when doing profiling operations, <strong><em>tabs</em></strong> can be added.
 A tab will leave some material behind so that the parts will be held together. The tabs can be removed later
@@ -649,6 +656,23 @@ Added tabs are visualized in orange color.</p>
 <img src="adding_tabs.png" alt="adding tabs">
 </div>
 <div class="title">Figure 5. Adding tabs</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_changing_entrypoints">Changing entrypoints</h4>
+<div class="paragraph">
+<p>Sometimes you may want to move the <em>"entry point"</em> of a profile cut, e.g. the point where the cutting starts.
+Tool entry will often leave some marks, so it is good to move the entry point to place where these marks are not so visible.</p>
+</div>
+<div class="paragraph">
+<p>Entry points for profiles are marked with a red dot. When a profile toolpath is chosen, press <code>e</code> to move the entry point
+for the cut closest to the mouse pointer.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="move_entrypoint.png" alt="move entrypoint">
+</div>
+<div class="title">Figure 6. Moving the entry point for the large outer profile cut</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -704,7 +728,8 @@ Added tabs are visualized in orange color.</p>
 <div class="content">
 <img src="dogbones.png" alt="dogbones">
 </div>
-<div class="title">Figure 6. Using dog bones</div>
+<div class="title">Figure 7. Using dog bones</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -719,7 +744,7 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 <div class="content">
 <img src="pocket.png" alt="pocket">
 </div>
-<div class="title">Figure 7. A pocket toolpath (with 'Nested' pattern)</div>
+<div class="title">Figure 8. A pocket toolpath (with 'Nested' pattern)</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -807,7 +832,7 @@ Generated toolpaths will follow the graphics at center, and the operation type s
 <div class="content">
 <img src="engrave.png" alt="engrave">
 </div>
-<div class="title">Figure 8. A FOLLOW_PATH toolpath for engraving</div>
+<div class="title">Figure 9. A FOLLOW_PATH toolpath for engraving</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -849,7 +874,7 @@ you can set this to true. See illustration below.</p>
 <div class="content">
 <img src="shortenByRadius.png" alt="shortenByRadius">
 </div>
-<div class="title">Figure 9. <strong>Shorten open paths by tool radius</strong>, difference between true and false</div>
+<div class="title">Figure 10. <strong>Shorten open paths by tool radius</strong>, difference between true and false</div>
 </div>
 </div>
 <div class="sect2">
@@ -863,7 +888,7 @@ Usually it will make sense to use simple shapes (like circles) for this type of 
 <div class="content">
 <img src="drilling.png" alt="drilling">
 </div>
-<div class="title">Figure 10. Toolpath for drilling holes in a circuit board</div>
+<div class="title">Figure 11. Toolpath for drilling holes in a circuit board</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -924,7 +949,7 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 <div class="content">
 <img src="laserraster.png" alt="laserraster">
 </div>
-<div class="title">Figure 11. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
+<div class="title">Figure 12. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1026,13 +1051,13 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-toolpath.png" alt="relief toolpath">
 </div>
-<div class="title">Figure 12. A RELIEF_FOLLOW toolpath</div>
+<div class="title">Figure 13. A RELIEF_FOLLOW toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="relief-visualized.png" alt="relief visualized">
 </div>
-<div class="title">Figure 13. Toolpath visualized in NCViewer</div>
+<div class="title">Figure 14. Toolpath visualized in NCViewer</div>
 </div>
 <div class="paragraph">
 <p>As shown on the above image, RELIEF_FOLLOW operations generate toolpaths running in a horizontal zig-zag pattern.</p>
@@ -1041,7 +1066,7 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-result.png" alt="relief result">
 </div>
-<div class="title">Figure 14. Final result of a relief toolpath</div>
+<div class="title">Figure 15. Final result of a relief toolpath</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1103,7 +1128,7 @@ But not too much! The knife still needs to be in contact with the material.</p>
 <div class="content">
 <img src="drag-knife.png" alt="drag knife">
 </div>
-<div class="title">Figure 15. A drag-knife toolpath. On each corner of the rectangular boundary we can see 90 degree swivel actions.</div>
+<div class="title">Figure 16. A drag-knife toolpath. On each corner of the rectangular boundary we can see 90 degree swivel actions.</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1147,7 +1172,7 @@ by the depth of cut.</p>
 <div class="content">
 <img src="vpocket-toolpath.png" alt="vpocket toolpath">
 </div>
-<div class="title">Figure 16. A V-pocket toolpath</div>
+<div class="title">Figure 17. A V-pocket toolpath</div>
 </div>
 <div class="paragraph">
 <p>The image above shows a v-pocket toolpath. The area affected by the v-bit is colored light-blue.</p>
@@ -1193,19 +1218,19 @@ This button opens up a dialog for configuring this cleanup-operation.</p>
 <div class="content">
 <img src="add-vpocket-cleanup-dialog.png" alt="add vpocket cleanup dialog">
 </div>
-<div class="title">Figure 17. Adding cleanup operation for VPOCKET</div>
+<div class="title">Figure 18. Adding cleanup operation for VPOCKET</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-cleanup-toolpath.png" alt="vpocket cleanup toolpath">
 </div>
-<div class="title">Figure 18. The cleanup (flattening) toolpath</div>
+<div class="title">Figure 19. The cleanup (flattening) toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-example.jpg" alt="vpocket example">
 </div>
-<div class="title">Figure 19. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
+<div class="title">Figure 20. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
 </div>
 </div>
 <div class="sect2">
@@ -1222,7 +1247,7 @@ with a wooden 'plug'(inlay) with another wood tone. This is a technique called '
 <div class="content">
 <img src="wooden-inlay-example.jpg" alt="wooden inlay example">
 </div>
-<div class="title">Figure 20. A wooden inlay coaster</div>
+<div class="title">Figure 21. A wooden inlay coaster</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1268,7 +1293,7 @@ with a wooden 'plug'(inlay) with another wood tone. This is a technique called '
 <div class="content">
 <img src="vinlay-toolpath.png" alt="vinlay toolpath">
 </div>
-<div class="title">Figure 21. An v-inlay toolpath. Automatic boundary shown in red.</div>
+<div class="title">Figure 22. An v-inlay toolpath. Automatic boundary shown in red.</div>
 </div>
 <div class="paragraph">
 <p>In the example above, all material between the traced toolpath and the boundary (in red) needs to be removed.
@@ -1281,7 +1306,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="vinlay-cleanup.png" alt="vinlay cleanup">
 </div>
-<div class="title">Figure 22. A cleanup toolpath for inlay</div>
+<div class="title">Figure 23. A cleanup toolpath for inlay</div>
 </div>
 <div class="sect3">
 <h4 id="_start_depth_and_flat_depth">Start-depth and Flat-depth</h4>
@@ -1292,7 +1317,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="wooden-inlay-params.svg" alt="wooden inlay params">
 </div>
-<div class="title">Figure 23. Visualization of startDepth and flatDepth</div>
+<div class="title">Figure 24. Visualization of startDepth and flatDepth</div>
 </div>
 <div class="paragraph">
 <p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.</p>
@@ -1321,7 +1346,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 <div class="content">
 <img src="wooden-inlay-param-rules.svg" alt="wooden inlay param rules">
 </div>
-<div class="title">Figure 24. Rules for flatDepth and startDepth</div>
+<div class="title">Figure 25. Rules for flatDepth and startDepth</div>
 </div>
 </div>
 </div>
@@ -1364,7 +1389,7 @@ This software is free of use. It comes without any warranty. Use it at your own 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-07-04 22:13:03 +0200
+Last updated 2024-09-28 22:21:52 +0200
 </div>
 </div>
 </body>
