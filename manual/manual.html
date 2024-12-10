@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="author" content="Marius Krabset">
 <title>Welcome to the KrabzCAM manual!</title>
 <style>
@@ -20,6 +20,118 @@ code {
 
 div.sect2 {
     margin-bottom: 7em;
+}
+</style>
+<style>
+/*! Asciidoctor Tabs | Copyright (c) 2018-present Dan Allen | MIT License */
+.tabs {
+    margin-bottom: 1.25em;
+}
+
+.tablist > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tablist > ul li {
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0.25em 1em;
+    position: relative;
+}
+
+.tablist > ul li:focus-visible {
+    outline: none;
+}
+
+.tablist.ulist,
+.tablist.ulist > ul li {
+    margin: 0;
+}
+
+.tablist.ulist > ul li + li {
+    margin-left: 0.25em;
+}
+
+.tabs .tablist li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+}
+
+.tabs.is-loading .tablist li:not(:first-child),
+.tabs:not(.is-loading) .tablist li:not(.is-selected) {
+    background-color: #f5f5f5;
+}
+
+.tabs.is-loading .tablist li:first-child::after,
+.tabs:not(.is-loading) .tablist li.is-selected::after {
+    background-color: #fff;
+}
+
+/*
+.tabs:not(.is-loading) .tablist li,
+.tabs:not(.is-loading) .tablist li::after {
+  transition: background-color 200ms ease-in-out;
+}
+*/
+
+.tablist > ul p {
+    line-height: inherit;
+    margin: 0;
+}
+
+.tabpanel {
+    background-color: #fff;
+    padding: 1.25em;
+}
+
+.tablist > ul li,
+.tabpanel {
+    border: 1px solid #dcdcdc;
+}
+
+.tablist > ul li {
+    border-bottom: 0;
+}
+
+.tabs.is-loading .tabpanel + .tabpanel,
+.tabs:not(.is-loading) .tabpanel.is-hidden {
+    display: none;
+}
+
+.tabpanel > :first-child {
+    margin-top: 0;
+}
+
+/* #content is a signature of the Asciidoctor standalone HTML output */
+#content .tabpanel > :last-child,
+#content .tabpanel > :last-child > :last-child,
+#content .tabpanel > :last-child > :last-child > li:last-child > :last-child {
+    margin-bottom: 0;
+}
+
+.tablecontainer {
+    overflow-x: auto;
+}
+
+#content .tablecontainer {
+    margin-bottom: 1.25em;
+}
+
+#content .tablecontainer > table.tableblock {
+    margin-bottom: 0;
 }
 </style>
 </head>
@@ -68,6 +180,7 @@ div.sect2 {
 <ul class="sectlevel3">
 <li><a href="#_using_tabs">Using tabs</a></li>
 <li><a href="#_changing_entrypoints">Changing entrypoints</a></li>
+<li><a href="#_extended_entrypoints">Extended entrypoints</a></li>
 </ul>
 </li>
 <li><a href="#_pocket">Pocket</a></li>
@@ -674,6 +787,23 @@ for the cut closest to the mouse pointer.</p>
 </div>
 <div class="title">Figure 6. Moving the entry point for the large outer profile cut</div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_extended_entrypoints">Extended entrypoints</h4>
+<div class="paragraph">
+<p>In addition to placing the entry point on the path of a profile, the entrypoint can also be extended away from the original tool path.
+This can be useful if you want the tool to enter the material somewhere away from the part you want to keep.
+After placing the on-path entrypoint (using <code>e</code>), you can use <code>Shift-e</code> to create an extended entrypoint.</p>
+</div>
+<div class="paragraph">
+<p>While placing an extended entrypoint an arrow will indicate the direction of travel along the path.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="extended_entrypoints.png" alt="ExtenedEntryPoint" width="600" height="600">
+</div>
+<div class="title">Figure 7. Adding extended entry points</div>
+</div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
 </div>
@@ -728,7 +858,7 @@ for the cut closest to the mouse pointer.</p>
 <div class="content">
 <img src="dogbones.png" alt="dogbones">
 </div>
-<div class="title">Figure 7. Using dog bones</div>
+<div class="title">Figure 8. Using dog bones</div>
 </div>
 </div>
 </div>
@@ -744,7 +874,7 @@ Usually, a pocketing operation does not cut all the way through the workpiece, s
 <div class="content">
 <img src="pocket.png" alt="pocket">
 </div>
-<div class="title">Figure 8. A pocket toolpath (with 'Nested' pattern)</div>
+<div class="title">Figure 9. A pocket toolpath (with 'Nested' pattern)</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -832,7 +962,7 @@ Generated toolpaths will follow the graphics at center, and the operation type s
 <div class="content">
 <img src="engrave.png" alt="engrave">
 </div>
-<div class="title">Figure 9. A FOLLOW_PATH toolpath for engraving</div>
+<div class="title">Figure 10. A FOLLOW_PATH toolpath for engraving</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -874,7 +1004,7 @@ you can set this to true. See illustration below.</p>
 <div class="content">
 <img src="shortenByRadius.png" alt="shortenByRadius">
 </div>
-<div class="title">Figure 10. <strong>Shorten open paths by tool radius</strong>, difference between true and false</div>
+<div class="title">Figure 11. <strong>Shorten open paths by tool radius</strong>, difference between true and false</div>
 </div>
 </div>
 <div class="sect2">
@@ -888,7 +1018,7 @@ Usually it will make sense to use simple shapes (like circles) for this type of 
 <div class="content">
 <img src="drilling.png" alt="drilling">
 </div>
-<div class="title">Figure 11. Toolpath for drilling holes in a circuit board</div>
+<div class="title">Figure 12. Toolpath for drilling holes in a circuit board</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -949,7 +1079,7 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 <div class="content">
 <img src="laserraster.png" alt="laserraster">
 </div>
-<div class="title">Figure 12. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
+<div class="title">Figure 13. Setup for a 70x70mm laser engrave with diagonal scan direction, and the result.</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1051,13 +1181,13 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-toolpath.png" alt="relief toolpath">
 </div>
-<div class="title">Figure 13. A RELIEF_FOLLOW toolpath</div>
+<div class="title">Figure 14. A RELIEF_FOLLOW toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="relief-visualized.png" alt="relief visualized">
 </div>
-<div class="title">Figure 14. Toolpath visualized in NCViewer</div>
+<div class="title">Figure 15. Toolpath visualized in NCViewer</div>
 </div>
 <div class="paragraph">
 <p>As shown on the above image, RELIEF_FOLLOW operations generate toolpaths running in a horizontal zig-zag pattern.</p>
@@ -1066,7 +1196,7 @@ Typically, you will first use a <strong>RELIEF_ROUGH</strong>-operation (see abo
 <div class="content">
 <img src="relief-result.png" alt="relief result">
 </div>
-<div class="title">Figure 15. Final result of a relief toolpath</div>
+<div class="title">Figure 16. Final result of a relief toolpath</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1128,7 +1258,7 @@ But not too much! The knife still needs to be in contact with the material.</p>
 <div class="content">
 <img src="drag-knife.png" alt="drag knife">
 </div>
-<div class="title">Figure 16. A drag-knife toolpath. On each corner of the rectangular boundary we can see 90 degree swivel actions.</div>
+<div class="title">Figure 17. A drag-knife toolpath. On each corner of the rectangular boundary we can see 90 degree swivel actions.</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1172,7 +1302,7 @@ by the depth of cut.</p>
 <div class="content">
 <img src="vpocket-toolpath.png" alt="vpocket toolpath">
 </div>
-<div class="title">Figure 17. A V-pocket toolpath</div>
+<div class="title">Figure 18. A V-pocket toolpath</div>
 </div>
 <div class="paragraph">
 <p>The image above shows a v-pocket toolpath. The area affected by the v-bit is colored light-blue.</p>
@@ -1218,19 +1348,19 @@ This button opens up a dialog for configuring this cleanup-operation.</p>
 <div class="content">
 <img src="add-vpocket-cleanup-dialog.png" alt="add vpocket cleanup dialog">
 </div>
-<div class="title">Figure 18. Adding cleanup operation for VPOCKET</div>
+<div class="title">Figure 19. Adding cleanup operation for VPOCKET</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-cleanup-toolpath.png" alt="vpocket cleanup toolpath">
 </div>
-<div class="title">Figure 19. The cleanup (flattening) toolpath</div>
+<div class="title">Figure 20. The cleanup (flattening) toolpath</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="vpocket-example.jpg" alt="vpocket example">
 </div>
-<div class="title">Figure 20. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
+<div class="title">Figure 21. Filling the pockets with paint and then sanding afterwards can give some quite nice results.</div>
 </div>
 </div>
 <div class="sect2">
@@ -1247,7 +1377,7 @@ with a wooden 'plug'(inlay) with another wood tone. This is a technique called '
 <div class="content">
 <img src="wooden-inlay-example.jpg" alt="wooden inlay example">
 </div>
-<div class="title">Figure 21. A wooden inlay coaster</div>
+<div class="title">Figure 22. A wooden inlay coaster</div>
 </div>
 <div class="paragraph">
 <p><strong>Properties</strong>:</p>
@@ -1293,7 +1423,7 @@ with a wooden 'plug'(inlay) with another wood tone. This is a technique called '
 <div class="content">
 <img src="vinlay-toolpath.png" alt="vinlay toolpath">
 </div>
-<div class="title">Figure 22. An v-inlay toolpath. Automatic boundary shown in red.</div>
+<div class="title">Figure 23. An v-inlay toolpath. Automatic boundary shown in red.</div>
 </div>
 <div class="paragraph">
 <p>In the example above, all material between the traced toolpath and the boundary (in red) needs to be removed.
@@ -1306,7 +1436,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="vinlay-cleanup.png" alt="vinlay cleanup">
 </div>
-<div class="title">Figure 23. A cleanup toolpath for inlay</div>
+<div class="title">Figure 24. A cleanup toolpath for inlay</div>
 </div>
 <div class="sect3">
 <h4 id="_start_depth_and_flat_depth">Start-depth and Flat-depth</h4>
@@ -1317,7 +1447,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <div class="content">
 <img src="wooden-inlay-params.svg" alt="wooden inlay params">
 </div>
-<div class="title">Figure 24. Visualization of startDepth and flatDepth</div>
+<div class="title">Figure 25. Visualization of startDepth and flatDepth</div>
 </div>
 <div class="paragraph">
 <p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.</p>
@@ -1346,7 +1476,7 @@ close to the thickness of the saw blade, so that it fits in between the parts.</
 <div class="content">
 <img src="wooden-inlay-param-rules.svg" alt="wooden inlay param rules">
 </div>
-<div class="title">Figure 25. Rules for flatDepth and startDepth</div>
+<div class="title">Figure 26. Rules for flatDepth and startDepth</div>
 </div>
 </div>
 </div>
@@ -1389,8 +1519,137 @@ This software is free of use. It comes without any warranty. Use it at your own 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-28 22:21:52 +0200
+Last updated 2024-12-11 00:06:47 +0100
 </div>
 </div>
+<script>
+;(function () { /*! Asciidoctor Tabs | Copyright (c) 2018-present Dan Allen | MIT License */
+  'use strict'
+
+  var config = (document.currentScript || {}).dataset || {}
+  var forEach = Array.prototype.forEach
+
+  init(document.querySelectorAll('.tabs'))
+
+  function init (tabsBlocks) {
+    if (!tabsBlocks.length) return
+    forEach.call(tabsBlocks, function (tabs) {
+      var syncIds = tabs.classList.contains('is-sync') ? {} : undefined
+      var tablist = tabs.querySelector('.tablist ul')
+      tablist.setAttribute('role', 'tablist')
+      var start
+      forEach.call(tablist.querySelectorAll('li'), function (tab, idx) {
+        tab.tabIndex = -1
+        tab.setAttribute('role', tab.classList.add('tab') || 'tab')
+        var id, anchor, syncId
+        if (!(id = tab.id) && (anchor = tab.querySelector('a[id]'))) {
+          id = tab.id = anchor.parentNode.removeChild(anchor).id
+        }
+        var panel = id && tabs.querySelector('.tabpanel[aria-labelledby~="' + id + '"]')
+        if (!panel) return idx ? undefined : toggleSelected(tab, true) // invalid state
+        syncIds && (((syncId = tab.textContent.trim()) in syncIds) ? (syncId = undefined) : true) &&
+        (syncIds[(tab.dataset.syncId = syncId)] = tab)
+        idx || (syncIds && (start = { tab: tab, panel: panel })) ? toggleHidden(panel, true) : toggleSelected(tab, true)
+        tab.setAttribute('aria-controls', panel.id)
+        panel.setAttribute('role', 'tabpanel')
+        var onClick = syncId === undefined ? activateTab : activateTabSync
+        tab.addEventListener('click', onClick.bind({ tabs: tabs, tab: tab, panel: panel }))
+      })
+      if (!tabs.closest('.tabpanel')) {
+        forEach.call(tabs.querySelectorAll('.tabpanel table.tableblock'), function (table) {
+          var container = Object.assign(document.createElement('div'), { className: 'tablecontainer' })
+          table.parentNode.insertBefore(container, table).appendChild(table)
+        })
+      }
+      if (start) {
+        var syncGroupId
+        for (var i = 0, lst = tabs.classList, len = lst.length, className; i !== len; i++) {
+          if (!(className = lst.item(i)).startsWith('data-sync-group-id=')) continue
+          tabs.dataset.syncGroupId = syncGroupId = lst.remove(className) || className.slice(19).replace(/\u00a0/g, ' ')
+          break
+        }
+        if (syncGroupId === undefined) tabs.dataset.syncGroupId = syncGroupId = Object.keys(syncIds).sort().join('|')
+        var preferredSyncId = 'syncStorageKey' in config &&
+          window[(config.syncStorageScope || 'local') + 'Storage'].getItem(config.syncStorageKey + '-' + syncGroupId)
+        var tab = preferredSyncId && syncIds[preferredSyncId]
+        tab && Object.assign(start, { tab: tab, panel: document.getElementById(tab.getAttribute('aria-controls')) })
+        toggleSelected(start.tab, true) || toggleHidden(start.panel, false)
+      }
+    })
+    onHashChange()
+    toggleClassOnEach(tabsBlocks, 'is-loading', 'remove')
+    window.setTimeout(toggleClassOnEach.bind(null, tabsBlocks, 'is-loaded', 'add'), 0)
+    window.addEventListener('hashchange', onHashChange)
+  }
+
+  function activateTab (e) {
+    var tab = this.tab
+    var tabs = this.tabs || (this.tabs = tab.closest('.tabs'))
+    var panel = this.panel || (this.panel = document.getElementById(tab.getAttribute('aria-controls')))
+    querySelectorWithSiblings(tabs, '.tablist .tab', 'tab').forEach(function (el) {
+      toggleSelected(el, el === tab)
+    })
+    querySelectorWithSiblings(tabs, '.tabpanel', 'tabpanel').forEach(function (el) {
+      toggleHidden(el, el !== panel)
+    })
+    if (!this.isSync && 'syncStorageKey' in config && 'syncGroupId' in tabs.dataset) {
+      var storageKey = config.syncStorageKey + '-' + tabs.dataset.syncGroupId
+      window[(config.syncStorageScope || 'local') + 'Storage'].setItem(storageKey, tab.dataset.syncId)
+    }
+    if (!e) return
+    var loc = window.location
+    var hashIdx = loc.hash ? loc.href.indexOf('#') : -1
+    if (~hashIdx) window.history.replaceState(null, '', loc.href.slice(0, hashIdx))
+    e.preventDefault()
+  }
+
+  function activateTabSync (e) {
+    activateTab.call(this, e)
+    var thisTabs = this.tabs
+    var thisTab = this.tab
+    var initialY = thisTabs.getBoundingClientRect().y
+    forEach.call(document.querySelectorAll('.tabs'), function (tabs) {
+      if (tabs === thisTabs || tabs.dataset.syncGroupId !== thisTabs.dataset.syncGroupId) return
+      querySelectorWithSiblings(tabs, '.tablist .tab', 'tab').forEach(function (tab) {
+        if (tab.dataset.syncId === thisTab.dataset.syncId) activateTab.call({ tabs: tabs, tab: tab, isSync: true })
+      })
+    })
+    var shiftedBy = thisTabs.getBoundingClientRect().y - initialY
+    if (shiftedBy && (shiftedBy = Math.round(shiftedBy))) window.scrollBy({ top: shiftedBy, behavior: 'instant' })
+  }
+
+  function querySelectorWithSiblings (scope, selector, siblingClass) {
+    var el = scope.querySelector(selector)
+    if (!el) return []
+    var result = [el]
+    while ((el = el.nextElementSibling) && el.classList.contains(siblingClass)) result.push(el)
+    return result
+  }
+
+  function toggleClassOnEach (elements, className, method) {
+    forEach.call(elements, function (el) {
+      el.classList[method](className)
+    })
+  }
+
+  function toggleHidden (el, state) {
+    el.classList[(el.hidden = state) ? 'add' : 'remove']('is-hidden')
+  }
+
+  function toggleSelected (el, state) {
+    el.setAttribute('aria-selected', '' + state)
+    el.classList[state ? 'add' : 'remove']('is-selected')
+    el.tabIndex = state ? 0 : -1
+  }
+
+  function onHashChange () {
+    var id = window.location.hash.slice(1)
+    if (!id) return
+    var tab = document.getElementById(~id.indexOf('%') ? decodeURIComponent(id) : id)
+    if (!(tab && tab.classList.contains('tab'))) return
+    'syncId' in tab.dataset ? activateTabSync.call({ tab: tab }) : activateTab.call({ tab: tab })
+  }
+})()
+</script>
 </body>
 </html>
