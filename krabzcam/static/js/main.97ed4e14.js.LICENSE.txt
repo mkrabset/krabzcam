@@ -313,12 +313,6 @@
 
 /**
  * @license
- * Svg-path-parser <https://www.npmjs.com/package/svg-path-parser/>
- * Released under MIT license <https://github.com/hughsk/svg-path-parser/blob/master/LICENSE/>
- */
-
-/**
- * @license
  * FFlate <https://www.npmjs.com/package/fflate/>
  * Released under MIT license <https://github.com/101arrowz/fflate/blob/HEAD/LICENSE/>
  */
