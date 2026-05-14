@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Marius Krabset">
 <title>Welcome to the KrabzCAM manual!</title>
 <style>
@@ -142,7 +142,7 @@ div.sect2 {
 <span id="author" class="author">Marius Krabset</span><br>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of content</div>
+<div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_user_interface">User interface</a>
 <ul class="sectlevel2">
@@ -214,13 +214,13 @@ div.sect2 {
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>KrabzCAM is a web application that allows you to generate G-code for various types of machining operations,
-such as cutting, pocketing, drilling, engraving etc.</p>
+<p>KrabzCAM is a web application that lets you generate G-code for various types of machining operations,
+such as cutting, pocketing, drilling, engraving, etc.</p>
 </div>
 <div class="paragraph">
-<p>With KrabzCAM, you can use a design in vector graphic format (SVG or DXF) and easily create the G-code for
+<p>With KrabzCAM, you can use a design in vector graphics format (SVG or DXF) and easily create G-code for
 processing on a CNC machine.
-This manual will provide you with information to get started using KrabzCAM.</p>
+This manual will help you get started using KrabzCAM.</p>
 </div>
 <div class="paragraph">
 <p><a href="https://mkrabset.github.io/pages/krabzcam/index.html" target="\"_blank\"">Launch KrabzCAM!</a></p>
@@ -242,7 +242,7 @@ This manual will provide you with information to get started using KrabzCAM.</p>
 <div class="sect2">
 <h3 id="_the_tool_panel">The tool panel</h3>
 <div class="paragraph">
-<p>The tool panel contains widgets for performing most of the actions in KrabzCAM.</p>
+<p>The tool panel contains widgets for performing most actions in KrabzCAM.</p>
 </div>
 <div class="paragraph">
 <p>The following is a summary of these actions:</p>
@@ -308,7 +308,7 @@ The view can be panned by holding the left button while dragging the mouse, and 
 for zooming in and out.</p>
 </div>
 <div class="paragraph">
-<p>When mouse pointer is in 2D view, a number of hotkeys can be used to manipulate the graphics.
+<p>When mouse pointer is in 2D view, a number of hotkeys may be used to manipulate the graphics.
 These hotkeys are displayed in the background. Use <code>h</code>-key to toggle this display on/off.</p>
 </div>
 <div class="paragraph">
@@ -443,7 +443,7 @@ For fine-adjustments, hold <code>Shift</code>-key while moving.
 If you only want to move horizontally or vertically, you can lock either axis by hitting <code>x</code> or <code>y</code>.</p>
 </div>
 <div class="paragraph">
-<p>Press <code>z</code> to zero position of selected elements, e.g. move to origin, or to pivot position (see below) if set.</p>
+<p>Press <code>z</code> to zero position of selected elements, e.g.. move to origin, or to pivot position (see below) if set.</p>
 </div>
 </div>
 <div class="sect3">
@@ -606,7 +606,7 @@ You may get more improvements by hitting <code>Optimize</code> multiple times.
 <h3 id="_saving_gcode">Saving gcode</h3>
 <div class="paragraph">
 <p>When toolpath is created, its g-code can be saved using the <code>Save G-code</code>-button.
-If more than one toolpath is available, it&#8217;s also possible to join multiple toolpaths into one single g-code file.
+If more than one toolpath is available, its also possible to join multiple toolpaths into one single g-code file.
 (Typically, this can make sense if no tool-change is required)</p>
 </div>
 <div class="paragraph">
@@ -730,8 +730,8 @@ If you want to go back to using the 'factory'-settings, you can press the <code>
 on which part to keep, the piece with the hole, or the piece leaving the hole.</p>
 </div>
 <div class="paragraph">
-<p>The graphical elements needs to be <em>closed paths</em> in order to be used for these operations.
-Open paths, e.g. paths not forming closed loops, will be ignored.
+<p>The graphical elements needs to be <em>closed paths</em> to be used for these operations.
+Open paths, e.g.. paths not forming closed loops, will be ignored.
 Path-elements with <em>self intersections</em> are also not allowed.</p>
 </div>
 <div class="imageblock">
@@ -743,7 +743,7 @@ Path-elements with <em>self intersections</em> are also not allowed.</p>
 <div class="paragraph">
 <p>In the example above, we have tried to create an inside profile for 4 graphical elements.
 The resulting tool path is visualized in light blue.
-As we can see, the arc on the left is ignored because it&#8217;s <em>open</em>.
+As we can see, the arc on the left is ignored because its <em>open</em>.
 The heptagon and triangle in the middle shows tool-paths, so these are ok.
 The 8-shaped closed path on the right is ignored and marked red because it intersects itself.
 The cross-point is marked with an 'X'.</p>
@@ -778,7 +778,7 @@ Added tabs are visualized in orange color.</p>
 <div class="sect3">
 <h4 id="_changing_entrypoints">Changing entrypoints</h4>
 <div class="paragraph">
-<p>Sometimes you may want to move the <em>"entry point"</em> of a profile cut, e.g. the point where the cutting starts.
+<p>Sometimes you may want to move the <em>"entry point"</em> of a profile cut, e.g.. the point where the cutting starts.
 Tool entry will often leave some marks, so it is good to move the entry point to place where these marks are not so visible.</p>
 </div>
 <div class="paragraph">
@@ -1066,7 +1066,7 @@ This operation type is similar to <strong>FOLLOW_PATH</strong>, but is made for 
 <p><strong>Feed-rate</strong>: Determines speed in x/y direction during cutting.</p>
 </li>
 <li>
-<p><strong>Laser power</strong>: Determines laser power, e.g. "S-value" in the g-code.</p>
+<p><strong>Laser power</strong>: Determines laser power, e.g.. "S-value" in the g-code.</p>
 </li>
 <li>
 <p><strong>Laser ON command</strong>: Choose between M3 and M4 as g-code command for turning on the laser. Depends on cnc controller.</p>
@@ -1457,7 +1457,7 @@ As the tool-diameter on the tip of a V-bit is zero, this tool is not suitable fo
 <p>As we see on the image above, for the V-pocket, the flatDepth is simply the maximum depth of cut.</p>
 </div>
 <div class="paragraph">
-<p>For inlays it&#8217;s a bit more complicated.
+<p>For inlays its a bit more complicated.
 The startDepth is the distance from the z=zero down to the <em>artwork level</em> (shown with the dotted green line).
 The artwork-level is the level where the V-bit draws the exact image given by the artwork.
 When the inlay is inserted into the pocket, their artwork-levels must align.</p>
@@ -1468,7 +1468,7 @@ So, to calculate the startDepth, we subtract the glue-gap from the flatDepth of 
 </div>
 <div class="paragraph">
 <p>Example:
-If the pocket is 5mm deep(e.g. flatDepth=5), and we want a 0.5 mm gap for the glue, then the inlay startDepth
+If the pocket is 5mm deep(e.g.. flatDepth=5), and we want a 0.5 mm gap for the glue, then the inlay startDepth
 should be 4.5 mm.</p>
 </div>
 <div class="paragraph">
@@ -1544,7 +1544,7 @@ This software is free of use. It comes without any warranty. Use it at your own 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-19 22:15:07 +0200
+Last updated 2026-05-14 01:00:19 +0200
 </div>
 </div>
 <script>
